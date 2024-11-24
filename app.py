@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load exercise data (chỉnh sửa đường dẫn phù hợp)
-exercise_data = pd.read_csv('D:/DoanGIS/excel/dulieudauvao/Exercise_data.csv')
+exercise_data = pd.read_csv('Exercise_data.csv')
 exercise_data['exercise_type'] = exercise_data['exercise_type'].fillna('Main')
 
 # Hàm tính BMI
